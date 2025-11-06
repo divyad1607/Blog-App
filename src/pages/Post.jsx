@@ -38,7 +38,7 @@ export default function Post() {
                 {/* Post Image */}
                 <div className="relative w-full flex justify-center mb-8">
                     <img
-                        src={appwriteService.getFilePreview(post.featuredImage)}
+                        src={appwriteService.getFileView(post.featuredImage)}
                         alt={post.title}
                         className="w-full max-h-[500px] object-cover rounded-2xl shadow-lg"
                     />

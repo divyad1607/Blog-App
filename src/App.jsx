@@ -6,7 +6,7 @@ import {login, logout} from "./store/authSlice"
 import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
 
-function App() {  
+function App() {
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
 
@@ -23,11 +23,11 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className='min-h-screen w-full flex flex-wrap content-between bg-gray-400'>
+    <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
       <div className='w-full block'>
         <Header />
         <main>
-        <Outlet />
+        TODO:  <Outlet />
         </main>
         <Footer />
       </div>
